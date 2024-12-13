@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()  // This is essential for Gradle plugins
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'  // Forge Maven Repository
+        }
+        maven {
+            url = 'https://maven.parchmentmc.org'  // Parchment Maven Repository
+        }
+    }
+    plugins {
+        id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+    }
+}
+
+rootProject.name = 'forge-1.20.1-LGOV'  // Set the project name if needed
